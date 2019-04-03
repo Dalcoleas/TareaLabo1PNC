@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Reseña</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="flex-container">
+        <div>
+            <p><b>Review</b> By Daniel Alcoleas</p>
+        </div>
+    </header>
+    <main>
+        <div class="grid-container-ready1">
+            <div class="margin">
+                <h1>Review <br> <span class="br">Br</span>eaking <span class="ba">Ba</span>d</h1>
+                <h3> Una corta reseña de una de las mejores series de todos los tiempos</h3>
+                <p> Para mi, Breaking Bad es una de las mejores series de todos los tiempos. Empezando por el guión, el
+                    cual
+                    es aprovechado de la mejor manera. En cada una de las conversaciones entre los personajes, se puede
+                    notar cierta tensión, que existe entre ellos. Es decir,
+                    los actores se metieron de lleno al personaje. Otra de las razones por la cual la considero una de
+                    las
+                    mejores series
+                    es la mezcla de géneros que posee la serie. Drama, comedia, suspenso... hay de todo un poco, y todo
+                    se ajusta para que
+                    trabaje a la perfección. Aunque muchos dicen que es una serie lenta, yo considero que el director
+                    supo manejar
+                    todo eso. Lo "lento" como lo ven unos, otros lo vemos como una oportunidad de apreciar y entender a
+                    detalle cada episodio,
+                    sin aburrirnos. Finalmente, considero que supieron darle un final digno a la serie. Y lo hicieron en
+                    el momento adecuado.
+                    Pd. Una de las cosas que más me divirtió, fue cuando en un episodio empieza una banda a cantar...
+                    "este hombre ya está muerto, no mas no le han avisado... :)" </p>
+                <button type="button" name="boton" class="normal" id="myBtn">Surprise...</button>
+            </div>
+            <div>
+                <img src="img/breaking.jpg" alt="bad" class="imagen" width="500" height="300">
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <img src="img/meth.jpg" alt="meth" width="400" height="400">
+                </div>
+
+            </div>
+        </div>
+
+        <h2>
+            <span>Datos Curiosos &nbsp &nbsp</span>
+        </h2>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="grid-container-ready">
+                    <div class="inline1">
+                        <i class="fas fa-tablets icono"></i>
+                    </div>
+                    <div class="inline1">
+                        <h3>Dato Curioso #1</h3>
+                        <p>La famosa meta azul que tantos problemas y alegrías dio a los protagonistas, como es obvio,
+                            no era meta de verdad. Todo lo contrario, era <b>dulce azúcar en roca</b> que una vez
+                            grabada la
+                            toma, podían usar para endulzar el café de turno. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-container-ready">
+                    <div class="inline1">
+                        <i class="far fa-angry icono"></i>
+                    </div>
+                    <div>
+                        <h3>Dato Curioso #2</h3>
+                        <p>Aunque no lo parezca, dos de las expresiones más reconocibles de Jesse Pinkman, el <b>Yo o el
+                                Bitch,</b>
+                            no fueron fruto de la improvisación, sino parte imprescindible del guión. De hecho,
+                            el margen que le dejaban a los actores para improvisar era del 1%, o menos. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-container-ready">
+                    <div class="inline1">
+                        <i class="far fa-grin-squint-tears icono"></i>
+                    </div>
+                    <div>
+                        <h3>Dato Curioso #3</h3>
+                        <p>
+
+                            No cabe duda que <b>Wendy</b>, la prostituta, era uno de los personajes más logrados de la
+                            serie.
+                            Tanto que un ciudadano, en un parón del rodaje, <b>la confundió con una prostituta de
+                                verdad... ¡y quiso contratarla! </b> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-container-ready">
+                    <div class="inline1">
+                        <i class="far fa-surprise icono"></i>
+                    </div>
+                    <div>
+                        <h3>Dato Curioso #4</h3>
+                        <p>La serie tiene 62 capítulos en total, casualmente (o no tanto) es el número del
+                            <b>Samario</b> en la
+                            tabla periódica. Pero, ¿qué es el Samario? Es un isotopo utilizado para tratar el cáncer de
+                            pulmón... <b>En Breaking Bad no existen las casualidades.</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        var modal = document.getElementById('myModal');
+
+        var btn = document.getElementById("myBtn");
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
